@@ -13,4 +13,4 @@
 
 <br>
 
-<%= link_to 'leave a review', new_restaurant_review_path(@restaruant) %>
+<%= link_to 'leave a review', restaurant_reviews_path(restaurant_id: @restaurant.id), class: "btn btn-primary" %>

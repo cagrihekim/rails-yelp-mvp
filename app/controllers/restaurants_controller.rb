@@ -39,4 +39,8 @@ class RestaurantsController < ApplicationController
   def validate_params
     params.required(:restaurant).permit(:name, :adress, :phone_number, :category)
   end
+
+  def find_restaurant
+    @restaurant = Restaurant.find(params[:id])
+  end
 end
